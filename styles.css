@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: brandon-grotesque, sans-serif;
+    background-color: #c5c4c2;
+}
+
+.ad-section{
+    background-color: #000000;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+    font-size: 1.6rem;
+    overflow: hidden;
+    height: 50px;
+}
+
+.ad-anuncio .ad{
+    display: none;
+    position: absolute;
+    top: 10;
+    left: 10;
+    width: 100%;
+    animation: slide 10s infinite;
+    
+}
+
+.ad-anuncio .ad.active {
+    display: block; 
+  }
+
+.ad{
+    width: 100%;
+    flex-shrink: 5 ;
+}
+
+@keyframes slide{
+    0%, 20% { transform: translateX(0); }
+    25%, 45% { transform: translateX(-100%); }
+    50%, 70% { transform: translateX(-200%); }
+    75%, 100% { transform: translateX(-300%); }
+}
+
+.navbar{
+    background-color: #9d182c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+
+  .navbar .BamBuana {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+
+
+ 
+  
+  .divider {
+    width: 100%;
+    height: 2px;
+    background-color: #000000; /* Color de la línea */
+    margin: 0px 0; /* Espaciado entre la línea y los elementos */
+}
+
+
+
+/* Contenedor principal */
+.content {
+    position: relative; /* Asegura que el contenido esté sobre el video */
+    z-index: 1; /* Encima del video */
+  }
+  
+  /* Estas son todas las Secciones */
+  .section {
+    min-height: 100vh; /* Esto es para que cada seccion ocupe toda la pantalla */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  }
+  
+  /* Estilo de texto */
+  h1, h2 {
+    font-family: Arial, sans-serif;
+    margin: 0 0 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Estilos para cada sección */
+  #inicio {
+    background-color: rgba(254, 10, 10, 0.6); /* Fondo oscuro */
+  }
+  
+  #acerca {
+    background-color: rgba(255, 119, 0, 0.754); /* Azul transparente */
+  }
+  
+  #servicios {
+    background-color: rgba(50, 205, 50, 0.6); /* Verde transparente */
+  }
+  
+  #contacto {
+    background-color: rgba(255, 69, 0, 0.6); /* Naranja transparente */
+  }
