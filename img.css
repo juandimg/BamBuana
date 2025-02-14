@@ -1,0 +1,34 @@
+.carousel-con{
+width: 100vw;
+height: 80vh;
+overflow: hidden;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.carousel{
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 200%;
+}
+
+.carousel img{
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(7, 7, 7);
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.sig { left: 0; }
+.ant { right: 0; }

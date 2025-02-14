@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./img.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    
 
     <title>BamBuana</title>
 
@@ -53,20 +53,25 @@
 <div class="content">
     <section class="section" id="inicio">
       <h1>Bienvenido</h1>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./img/OSC09609.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="./img/OSC09793 (1).jpg" alt=""></div>
-          <div class="swiper-slide"><img src="./img/OSC09705.jpg" alt=""></div>
-         
+      
+      <div class="carousel-con">
+        <button class="btn sig" onclick="moveSlide(-1)"><</button>
+        <div class="carousel" id="carousel">
+          <img src="./img/OSC09603.jpg" alt="">
+          <img src="./img/OSC09603.jpg" alt="">
+          <img src="./img/OSC09594.jpg" alt="">
+          <img src="./img/OSC09603.jpg" alt="">
+          <img src="./img/OSC09603.jpg" alt="">
+          <img src="./img/OSC09594.jpg" alt="">
+          <img src="./img/OSC09603.jpg" alt="">
+          <img src="./img/OSC09603.jpg" alt="">
+          <img src="./img/OSC09594.jpg" alt="">
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <button class="btn ant" onclick="moveSlide(1)">></button>
+
 
       </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
       <script src="./carrusel.js"></script>
     </section>
 
