@@ -1,34 +1,56 @@
-.carousel-con{
-width: 100vw;
-height: 80vh;
-overflow: hidden;
-position: relative;
-display: flex;
-align-items: center;
-justify-content: center;
+.cont-img{
+   display: flex;
+   justify-content: space-between;
+   width: 100%; 
 }
 
-.carousel{
+.cont-img img{
+    width: 30%; 
+    height: auto; 
+}
+
+
+.cont-img {
     display: flex;
-    transition: transform 1s ease-in-out;
-    width: 200%;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan */
+    gap: 10px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las imágenes */
+    padding: 20px;
 }
 
-.carousel img{
-    width: 100vw;
-    height: 80vh;
-    object-fit: cover;
+.cont-img img {
+    max-width: 100%; /* Asegura que las imágenes no se desborden */
+    height: auto; /* Mantiene la proporción */
+    flex: 1 1 calc(33.33% - 10px); /* Tres imágenes por fila en pantallas grandes */
 }
 
-.btn{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgb(7, 7, 7);
-    color: whitesmoke;
-    cursor: pointer;
-    padding: 10px;
+@media (max-width: 600px) {
+    .cont-img img {
+        flex: 1 1 100%; /* Una imagen por fila en móviles */
+    }
 }
 
-.sig { left: 0; }
-.ant { right: 0; }
+
+.productos-con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto {
+    width: 45%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.producto img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.producto p{
+    margin-top: 10px;
+    font-size: 16px;
+    color:black
+}

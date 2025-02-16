@@ -1,3 +1,48 @@
+@media (max-width: 600px) {
+  body {
+      font-size: 14px; /* Reduce el tamaño de la fuente en móviles */
+  }
+
+  .ad-section {
+      font-size: 1.2rem; /* Reduce el tamaño del texto del anuncio */
+      height: 40px; /* Reduce la altura del anuncio */
+      padding: 10px; /* Reduce el padding */
+  }
+
+  .navbar {
+      padding: 5px 10px; /* Reduce el padding del navbar */
+  }
+
+  .navbar .BamBuana {
+      font-size: 1.2rem; /* Reduce el tamaño del texto del logo */
+  }
+
+  .navbar a {
+      font-size: 0.9rem; /* Reduce el tamaño de los íconos */
+      margin: 0 5px; /* Reduce el margen entre íconos */
+  }
+
+  .section {
+      padding: 20px; /* Reduce el padding de las secciones */
+  }
+
+  h1 {
+      font-size: 2rem; /* Ajusta el tamaño del título principal */
+  }
+
+  h2 {
+      font-size: 1.5rem; /* Ajusta el tamaño de los subtítulos */
+  }
+
+  p {
+      font-size: 1rem; /* Ajusta el tamaño del texto */
+  }
+}
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +52,10 @@
 body{
     font-family: brandon-grotesque, sans-serif;
     background-color: #c5c4c2;
+
 }
+
+
 
 .ad-section{
     background-color: #000000;
@@ -114,8 +162,11 @@ body{
     background-color: rgba(254, 10, 10, 0.6); /* Fondo oscuro */
   }
   
-  #acerca {
+  #productos {
     background-color: rgba(255, 119, 0, 0.754); /* Azul transparente */
+    h2{
+
+    }
   }
   
   #servicios {
@@ -128,3 +179,8 @@ body{
 
 
  
+  @media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
